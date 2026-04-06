@@ -138,19 +138,19 @@
 
 				<div class="flex flex-col gap-1 mt-5 text-sm font-light">
 					<p>Consulta aquí todos los</p>
-					<a href="https://piensoferal.es/contacto/"
+					<a href="https://kasaludintegral.com/contacto/"
 						class="text-footer-item hover:text-black">
 						Teléfonos de contacto y horarios
 					</a>
-					<a href="https://piensoferal.es/contacto/"
+					<a href="https://kasaludintegral.com/contacto/"
 						class="text-footer-item hover:text-black">
 						Formulario de contacto
 					</a>
 					<div>
 						<span>Email:</span>
-						<a href="mailto:info@piensoferal.es"
+						<a href="mailto:info@kasaludintegral.com"
 							class="text-footer-item hover:text-black">
-							info@piensoferal.es
+							info@kasaludintegral.com
 						</a>
 					</div>
 				</div>
