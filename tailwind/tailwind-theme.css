@@ -25,6 +25,11 @@
 	--container-content: var(--wp--style--global--content-size);
 	--container-wide: var(--wp--style--global--wide-size);
 
+	--color-homepage-bg: #151518;
+	--color-main-bg: #faf6f0;
+
+	--color-title: #cfa76b;
+
 	--color-whatsapp: #25D366;
 	--color-footer-arrow: #627d47;
 	--color-footer-item: #ac7e39;
@@ -41,7 +46,7 @@
 	 * https://tailwindcss.com/docs/theme#default-theme-variable-reference
 	 */
 	--font-sans:
-		"Lato", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		"Montserrat", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
 		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 	--font-mono:

@@ -10,7 +10,7 @@
 
 ?>
 
-<header id="masthead" class="flex px-10 py-2 gap-5 items-center bg-black text-white font-sans">
+<header id="masthead" class="flex px-10 py-2 gap-5 items-center bg-homepage-bg text-white font-sans">
 
 	<div class="flex-none">
 		<!-- <?php

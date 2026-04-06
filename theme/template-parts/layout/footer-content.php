@@ -12,7 +12,7 @@
 
 <footer id="colophon" class="bg-[#f5f6fa] font-sans">
 	<!-- Footer Links -->
-	<section class="py-12 pb-30 mx-60">
+	<section class="py-12 pb-30 mx-20 lg:mx-60">
 		<div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-20">
 			<!-- Footer Column 1	 -->
 			<div>
