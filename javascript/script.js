@@ -8,3 +8,24 @@
  * For esbuild documentation, please see:
  * https://esbuild.github.io/
  */
+
+document.addEventListener('DOMContentLoaded', () => {
+	const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+	const primaryMenu = document.getElementById('primary-menu');
+	const mobileSearchPanel = document.getElementById('mobile-search-panel');
+
+	if (!mobileMenuToggle || !primaryMenu) {
+		return;
+	}
+
+	mobileMenuToggle.addEventListener('click', () => {
+		const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+		mobileMenuToggle.setAttribute('aria-expanded', String(!isExpanded));
+
+		primaryMenu.classList.toggle('hidden', isExpanded);
+
+		if (mobileSearchPanel) {
+			mobileSearchPanel.classList.toggle('hidden', isExpanded);
+		}
+	});
+});

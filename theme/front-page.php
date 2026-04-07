@@ -4,33 +4,33 @@
     <main id="main-front" class="font-sans">
 
         <!-- HERO -->
-        <section class="relative w-full">
+        <section class="relative w-full h-screen min-h-[680px] overflow-hidden">
             <img
-                src="https://consultas-piensoferal-es-2.local/wp-content/uploads/2026/03/imagen-fondo-inicio-consultorio-Editada-1.png"
+                src="https://nutricion.kasaludintegral.com/wp-content/uploads/2026/03/imagen-fondo-inicio-consultorio-Editada.png"
                 alt="Perro y gato"
-                class="w-full object-cover">
+                class="absolute inset-0 object-cover object-center w-full h-full">
 
-            <div class="absolute inset-0 flex flex-col items-center justify-between py-10 px-4">
+            <div class="relative z-10 flex flex-col items-center justify-between h-full px-4 pt-24 pb-10 md:px-8 md:pt-28 lg:pb-12">
 
                 <!-- Title -->
-                <div class="text-center text-white font-bold mt-6">
-                    <p class="text-5xl">Nutrición consciente</p>
-                    <p class="text-4xl">para una</p>
-                    <p class="text-5xl">vida saludable</p>
+                <div class="mt-4 font-bold leading-tight text-center text-white">
+                    <p class="text-4xl md:text-6xl">Nutrición consciente</p>
+                    <p class="text-3xl md:text-5xl">para una</p>
+                    <p class="text-4xl md:text-6xl">vida saludable</p>
                 </div>
 
                 <!-- Buttons -->
-                <div class="grid grid-cols-2 gap-4 gap-x-10 mb-6 w-full max-w-5xl">
-                    <a href="/consultorio" class="homepage-button">CONSULTA AL NUTRICIONISTA</a>
+                <div class="grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-x-16 md:gap-y-8 lg:gap-x-24">
+                    <a href="/questions/" class="homepage-button">CONSULTA AL NUTRICIONISTA</a>
                     <a href="/pide-tu-cita" class="homepage-button">PIDE CITA AL NUTRICIONISTA</a>
-                    <a href="/guia-de-salud-animal/" class="homepage-button">GUIA DE SALUD ANIMAL</a>
-                    <a href="/formacion" class="homepage-button">FORMACIÓN NUTRICIONAL ANIMAL</a>
+                    <a href="/webinars/guia-practica-para-una-nutricion-saludable-y-preventiva-en-animales/" class="homepage-button">GUIA DE SALUD ANIMAL</a>
+                    <a href="/webinars" class="homepage-button">FORMACIÓN NUTRICIONAL ANIMAL</a>
                 </div>
 
             </div>
         </section>
 
-        <section class="bg-homepage-bg text-white">
+        <section class="px-4 py-12 text-white bg-homepage-bg md:px-8 lg:py-16">
             <?php
             while (have_posts()) :
                 the_post(); ?>

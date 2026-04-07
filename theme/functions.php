@@ -149,6 +149,11 @@ add_action('widgets_init', '_tw_widgets_init');
  */
 function _tw_scripts()
 {
+	$style_path  = get_template_directory() . '/style.css';
+	$script_path = get_template_directory() . '/js/script.min.js';
+	$style_ver   = file_exists($style_path) ? filemtime($style_path) : _TW_VERSION;
+	$script_ver  = file_exists($script_path) ? filemtime($script_path) : _TW_VERSION;
+
 	wp_enqueue_style(
 		'google-fonts',
 		'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap',
@@ -156,8 +161,8 @@ function _tw_scripts()
 		null
 	);
 
-	wp_enqueue_style('_tw-style', get_stylesheet_uri(), array('google-fonts'), _TW_VERSION);
-	wp_enqueue_script('_tw-script', get_template_directory_uri() . '/js/script.min.js', array(), _TW_VERSION, true);
+	wp_enqueue_style('_tw-style', get_stylesheet_uri(), array('google-fonts'), $style_ver);
+	wp_enqueue_script('_tw-script', get_template_directory_uri() . '/js/script.min.js', array(), $script_ver, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

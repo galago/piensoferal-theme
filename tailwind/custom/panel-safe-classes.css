@@ -1,0 +1,31 @@
+/**
+ * Tailwind v4 safelist for classes used from WordPress admin content/panels.
+ *
+ * Why this exists:
+ * - Tailwind builds from project files.
+ * - WP editor/panel content is stored in DB.
+ * - Classes typed only in admin can be purged unless safelisted here.
+ *
+ * How to use:
+ * - Add approved utilities below using `@source inline("...")`.
+ * - Keep this list intentional; avoid adding huge wildcard sets.
+ * - Prefer semantic classes in components.css for repeated patterns.
+ */
+
+/* Typography */
+@source inline("text-left text-center text-right");
+@source inline("font-light font-normal font-medium font-semibold font-bold");
+@source inline("text-sm text-base text-lg text-xl text-2xl text-3xl");
+
+/* Spacing */
+@source inline("mt-2 mt-4 mt-6 mb-2 mb-4 mb-6");
+@source inline("px-2 px-4 px-6 py-2 py-3 py-4");
+
+/* Layout */
+@source inline("w-full max-w-prose mx-auto");
+
+/* Colors used in rich text blocks/CTAs */
+@source inline("text-white text-black bg-white bg-black bg-homepage-bg");
+
+/* Common interaction variants */
+@source inline("hover:bg-white hover:text-black");

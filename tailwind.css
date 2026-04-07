@@ -69,6 +69,14 @@
 @import "./tailwind/tailwind-typography.css";
 
 /**
+ * Safelist utilities that may be typed in WP admin content/panels.
+ *
+ * Because admin content lives in the database, Tailwind cannot always discover
+ * those class names during build. Keep approved utility classes in this file.
+ */
+@import "./tailwind/custom/panel-safe-classes.css";
+
+/**
  * Add Tailwind’s utility classes and any utility classes registered by
  * plugins, then add custom utility classes.
  */
