@@ -60,7 +60,7 @@
 				array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
-					'menu_class'	=> 'hidden max-h-[calc(100vh-9rem)] w-full flex-col gap-y-2 overflow-y-auto rounded bg-black/40 p-3 text-left text-sm uppercase md:flex md:max-h-none md:w-full md:flex-row md:flex-nowrap md:items-center md:justify-between md:gap-y-0 md:overflow-visible md:bg-transparent md:p-0 md:text-center md:text-xs lg:text-sm',
+					'menu_class'	=> 'hidden max-h-[calc(100vh-9rem)] w-full flex-col gap-y-2 overflow-y-auto rounded bg-black/40 p-3 text-left text-sm uppercase md:flex md:max-h-none md:w-full md:flex-row md:flex-nowrap md:items-start md:justify-between md:gap-x-3 md:gap-y-0 md:overflow-visible md:bg-transparent md:p-0 md:text-center md:text-xs lg:text-sm',
 					'fallback_cb'    => false,
 					'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
 				)

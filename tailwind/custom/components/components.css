@@ -70,7 +70,7 @@
 
 /* FIXED HEADER OFFSETS */
 #content {
-	@apply pt-20 md:pt-24;
+	@apply pt-20 md:pt-28;
 }
 
 body.home #content {
@@ -84,11 +84,11 @@ body.home #content {
 }
 
 #primary-menu>.menu-item {
-	@apply p-0;
+	@apply p-0 md:flex-1 md:min-w-0;
 }
 
 #primary-menu>.menu-item>a {
-	@apply block py-2 md:py-0;
+	@apply block py-2 leading-tight md:px-2 md:py-1 md:text-center md:whitespace-normal;
 }
 
 #primary-menu .menu-item-home {
@@ -155,10 +155,29 @@ body.home #content {
 	@apply max-w-5xl mx-auto py-16 text-center;
 }
 
+.bg-homepage-bg .homepage-description h1,
+.bg-homepage-bg .homepage-description h2,
+.bg-homepage-bg .homepage-description h3,
+.bg-homepage-bg .homepage-description h4,
+.bg-homepage-bg .homepage-description h5,
+.bg-homepage-bg .homepage-description h6 {
+	@apply text-white;
+}
+
 .homepage-description h3 {
 	@apply text-3xl font-bold mb-6;
 }
 
 .homepage-description p {
 	@apply text-xl font-light text-left mb-3;
+}
+
+.bg-homepage-bg .homepage-description p,
+.bg-homepage-bg .homepage-description li,
+.bg-homepage-bg .homepage-description span {
+	@apply text-gray-100;
+}
+
+.bg-homepage-bg .homepage-description a {
+	@apply text-white underline decoration-white/60 hover:decoration-white;
 }

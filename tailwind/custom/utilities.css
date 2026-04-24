@@ -6,3 +6,76 @@
  *
  * https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities
  */
+
+/* Veterinary layout block classes (for editor content) */
+.vet-layout-section {
+	@apply bg-main-bg px-6 py-10 md:px-8 md:py-12;
+}
+
+.vet-layout-wrap {
+	@apply mx-auto max-w-[1280px];
+}
+
+.vet-layout-page-title {
+	@apply mb-8 text-center text-2xl font-bold leading-tight text-title md:text-3xl;
+}
+
+.vet-layout-columns {
+	@apply grid grid-cols-1 items-center gap-6 md:grid-cols-12 md:gap-8;
+}
+
+.vet-layout-columns>.wp-block-column,
+.vet-layout-columns>* {
+	@apply m-0;
+}
+
+.vet-layout-columns>.wp-block-column:first-child,
+.vet-layout-columns>*:first-child {
+	@apply md:col-span-4;
+}
+
+.vet-layout-columns>.wp-block-column:last-child,
+.vet-layout-columns>*:last-child {
+	@apply md:col-span-8;
+}
+
+.vet-layout-photo {
+	@apply mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-full;
+}
+
+.vet-layout-photo img {
+	@apply h-full w-full object-cover;
+}
+
+.vet-layout-title {
+	@apply mb-3 text-xl font-bold leading-tight text-title md:text-2xl lg:text-3xl;
+}
+
+.vet-layout-intro {
+	@apply mb-4 text-lg leading-snug md:text-xl lg:text-2xl;
+}
+
+.vet-layout-body {
+	@apply text-base leading-snug md:text-lg lg:text-xl;
+}
+
+.vet-layout-intro a,
+.vet-layout-body a {
+	@apply text-foreground underline underline-offset-4 decoration-foreground/60 hover:decoration-foreground;
+}
+
+.vet-layout-cta-section {
+	@apply bg-main-bg px-6 pb-10 pt-4 md:px-8 md:pb-12 md:pt-6;
+}
+
+.vet-layout-cta-wrap {
+	@apply mx-auto max-w-[1100px] text-center;
+}
+
+.vet-layout-cta-title {
+	@apply mb-2 text-center text-xl font-bold leading-tight text-title md:text-2xl;
+}
+
+.vet-layout-cta-copy {
+	@apply text-center text-lg leading-snug md:text-xl lg:text-2xl;
+}

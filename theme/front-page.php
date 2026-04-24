@@ -21,10 +21,10 @@
 
                 <!-- Buttons -->
                 <div class="grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-x-16 md:gap-y-8 lg:gap-x-24">
-                    <a href="/questions/" class="homepage-button">CONSULTA AL NUTRICIONISTA</a>
+                    <a href="/consultorio-nutricion-animal/" class="homepage-button">CONSULTA AL NUTRICIONISTA</a>
                     <a href="/pide-tu-cita" class="homepage-button">PIDE CITA AL NUTRICIONISTA</a>
-                    <a href="/webinars/guia-practica-para-una-nutricion-saludable-y-preventiva-en-animales/" class="homepage-button">GUIA DE SALUD ANIMAL</a>
-                    <a href="/webinars" class="homepage-button">FORMACIÓN NUTRICIONAL ANIMAL</a>
+                    <a href="/guia-salud-animal/" class="homepage-button">GUIA DE SALUD ANIMAL</a>
+                    <a href="/formacion-nutricion-animal/" class="homepage-button">FORMACIÓN NUTRICIONAL ANIMAL</a>
                 </div>
 
             </div>
