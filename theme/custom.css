@@ -980,6 +980,7 @@ body.search .page-title span {
    POST CARD LIST
 ======================================== */
 
+body.blog article.post,
 body.archive article.post,
 body.author article.post,
 body.category article.post,
@@ -999,6 +1000,7 @@ body.search article.post {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+body.blog article.post:hover,
 body.archive article.post:hover,
 body.author article.post:hover,
 body.category article.post:hover,
@@ -1011,6 +1013,7 @@ body.search article.post:hover {
 }
 
 /* Remove ugly raw flow */
+body.blog article.post > * ,
 body.archive article.post > * ,
 body.author article.post > * ,
 body.category article.post > * ,
@@ -1024,6 +1027,7 @@ body.search article.post > * {
    THUMBNAIL
 ======================================== */
 
+body.blog article.post > figure,
 body.archive article.post > figure,
 body.author article.post > figure,
 body.category article.post > figure,
@@ -1038,6 +1042,7 @@ body.search article.post > figure {
   box-shadow: 0 8px 24px rgba(20, 20, 20, 0.08);
 }
 
+body.blog article.post > figure a,
 body.archive article.post > figure a,
 body.author article.post > figure a,
 body.category article.post > figure a,
@@ -1047,6 +1052,7 @@ body.search article.post > figure a {
   display: block;
 }
 
+body.blog article.post > figure img,
 body.archive article.post > figure img,
 body.author article.post > figure img,
 body.category article.post > figure img,
@@ -1060,6 +1066,7 @@ body.search article.post > figure img {
   transition: transform 0.35s ease;
 }
 
+body.blog article.post:hover > figure img,
 body.archive article.post:hover > figure img,
 body.author article.post:hover > figure img,
 body.category article.post:hover > figure img,
@@ -1073,6 +1080,7 @@ body.search article.post:hover > figure img {
    CONTENT SIDE
 ======================================== */
 
+body.blog article.post .entry-header,
 body.archive article.post .entry-header,
 body.author article.post .entry-header,
 body.category article.post .entry-header,
@@ -1082,6 +1090,7 @@ body.search article.post .entry-header {
   margin: 0 0 10px;
 }
 
+body.blog article.post .entry-title,
 body.archive article.post .entry-title,
 body.author article.post .entry-title,
 body.category article.post .entry-title,
@@ -1096,6 +1105,7 @@ body.search article.post .entry-title {
   text-wrap: balance;
 }
 
+body.blog article.post .entry-title a,
 body.archive article.post .entry-title a,
 body.author article.post .entry-title a,
 body.category article.post .entry-title a,
@@ -1106,6 +1116,7 @@ body.search article.post .entry-title a {
   text-decoration: none;
 }
 
+body.blog article.post .entry-title a:hover,
 body.archive article.post .entry-title a:hover,
 body.author article.post .entry-title a:hover,
 body.category article.post .entry-title a:hover,
@@ -1116,8 +1127,11 @@ body.search article.post .entry-title a:hover {
 }
 
 /* Make the content/meta side sit in second column */
+body.blog article.post .entry-header,
 body.archive article.post .entry-header,
+body.blog article.post .entry-content,
 body.archive article.post .entry-content,
+body.blog article.post .entry-footer,
 body.archive article.post .entry-footer,
 body.author article.post .entry-header,
 body.author article.post .entry-content,
@@ -1138,6 +1152,7 @@ body.search article.post .entry-footer {
 }
 
 /* Put figure in first column spanning full card height */
+body.blog article.post > figure,
 body.archive article.post > figure,
 body.author article.post > figure,
 body.category article.post > figure,
@@ -1152,6 +1167,7 @@ body.search article.post > figure {
    EXCERPT
 ======================================== */
 
+body.blog article.post .entry-content,
 body.archive article.post .entry-content,
 body.author article.post .entry-content,
 body.category article.post .entry-content,
@@ -1164,6 +1180,7 @@ body.search article.post .entry-content {
   color: #45403b;
 }
 
+body.blog article.post .entry-content p,
 body.archive article.post .entry-content p,
 body.author article.post .entry-content p,
 body.category article.post .entry-content p,
@@ -1173,6 +1190,7 @@ body.search article.post .entry-content p {
   margin: 0;
 }
 
+body.blog article.post .entry-content a,
 body.archive article.post .entry-content a,
 body.author article.post .entry-content a,
 body.category article.post .entry-content a,
@@ -1186,6 +1204,7 @@ body.search article.post .entry-content a {
   white-space: nowrap;
 }
 
+body.blog article.post .entry-content a:hover,
 body.archive article.post .entry-content a:hover,
 body.author article.post .entry-content a:hover,
 body.category article.post .entry-content a:hover,
@@ -1199,6 +1218,7 @@ body.search article.post .entry-content a:hover {
    META
 ======================================== */
 
+body.blog article.post .entry-footer,
 body.archive article.post .entry-footer,
 body.author article.post .entry-footer,
 body.category article.post .entry-footer,
@@ -1216,6 +1236,7 @@ body.search article.post .entry-footer {
   color: var(--archive-muted);
 }
 
+body.blog article.post .entry-footer a,
 body.archive article.post .entry-footer a,
 body.author article.post .entry-footer a,
 body.category article.post .entry-footer a,
@@ -1226,6 +1247,7 @@ body.search article.post .entry-footer a {
   text-decoration: none;
 }
 
+body.blog article.post .entry-footer a:hover,
 body.archive article.post .entry-footer a:hover,
 body.author article.post .entry-footer a:hover,
 body.category article.post .entry-footer a:hover,
@@ -1235,6 +1257,7 @@ body.search article.post .entry-footer a:hover {
   color: var(--archive-brand-dark);
 }
 
+body.blog article.post .entry-footer .author a,
 body.archive article.post .entry-footer .author a,
 body.author article.post .entry-footer .author a,
 body.category article.post .entry-footer .author a,
@@ -1245,6 +1268,7 @@ body.search article.post .entry-footer .author a {
   color: #433d37;
 }
 
+body.blog article.post .entry-footer a[rel="category tag"],
 body.archive article.post .entry-footer a[rel="category tag"],
 body.author article.post .entry-footer a[rel="category tag"],
 body.category article.post .entry-footer a[rel="category tag"],
@@ -1261,6 +1285,7 @@ body.search article.post .entry-footer a[rel="category tag"] {
   line-height: 1;
 }
 
+body.blog article.post .entry-footer a[rel="tag"],
 body.archive article.post .entry-footer a[rel="tag"],
 body.author article.post .entry-footer a[rel="tag"],
 body.category article.post .entry-footer a[rel="tag"],
@@ -1278,12 +1303,14 @@ body.search article.post .entry-footer a[rel="tag"] {
 }
 
 /* Hide noisy links */
+body.blog article.post .post-edit-link,
 body.archive article.post .post-edit-link,
 body.author article.post .post-edit-link,
 body.category article.post .post-edit-link,
 body.tag article.post .post-edit-link,
 body.date article.post .post-edit-link,
 body.search article.post .post-edit-link,
+body.blog article.post .entry-footer a[href*="#respond"],
 body.archive article.post .entry-footer a[href*="#respond"],
 body.author article.post .entry-footer a[href*="#respond"],
 body.category article.post .entry-footer a[href*="#respond"],
@@ -1417,6 +1444,7 @@ body.search .emoji {
 ======================================== */
 
 @media (max-width: 900px) {
+  body.blog article.post,
   body.archive article.post,
   body.author article.post,
   body.category article.post,
@@ -1428,9 +1456,13 @@ body.search .emoji {
     padding: 18px;
   }
 
+  body.blog article.post > figure,
   body.archive article.post > figure,
+  body.blog article.post .entry-header,
   body.archive article.post .entry-header,
+  body.blog article.post .entry-content,
   body.archive article.post .entry-content,
+  body.blog article.post .entry-footer,
   body.archive article.post .entry-footer,
   body.author article.post > figure,
   body.author article.post .entry-header,
@@ -1456,6 +1488,7 @@ body.search .emoji {
     grid-row: auto;
   }
 
+  body.blog article.post .entry-title,
   body.archive article.post .entry-title,
   body.author article.post .entry-title,
   body.category article.post .entry-title,
