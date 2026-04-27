@@ -76,8 +76,7 @@ if ( ! function_exists( '_tw_entry_meta' ) ) :
 			// Posted on.
 			_tw_posted_on();
 
-			/* translators: used between list items, there is a space after the comma. */
-			$categories_list = get_the_category_list( __( ', ', '_tw' ) );
+			$categories_list = get_the_category_list( '' );
 			if ( $categories_list ) {
 				printf(
 				/* translators: 1: posted in label, only visible to screen readers. 2: list of categories. */
@@ -87,8 +86,7 @@ if ( ! function_exists( '_tw_entry_meta' ) ) :
 				);
 			}
 
-			/* translators: used between list items, there is a space after the comma. */
-			$tags_list = get_the_tag_list( '', __( ', ', '_tw' ) );
+			$tags_list = get_the_tag_list( '', '' );
 			if ( $tags_list ) {
 				printf(
 				/* translators: 1: tags label, only visible to screen readers. 2: list of tags. */
@@ -137,8 +135,7 @@ if ( ! function_exists( '_tw_entry_footer' ) ) :
 			// Posted on.
 			_tw_posted_on();
 
-			/* translators: used between list items, there is a space after the comma. */
-			$categories_list = get_the_category_list( __( ', ', '_tw' ) );
+			$categories_list = get_the_category_list( '' );
 			if ( $categories_list ) {
 				printf(
 				/* translators: 1: posted in label, only visible to screen readers. 2: list of categories. */
@@ -148,8 +145,7 @@ if ( ! function_exists( '_tw_entry_footer' ) ) :
 				);
 			}
 
-			/* translators: used between list items, there is a space after the comma. */
-			$tags_list = get_the_tag_list( '', __( ', ', '_tw' ) );
+			$tags_list = get_the_tag_list( '', '' );
 			if ( $tags_list ) {
 				printf(
 				/* translators: 1: tags label, only visible to screen readers. 2: list of tags. */

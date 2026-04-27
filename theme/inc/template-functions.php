@@ -97,7 +97,7 @@ function _tw_continue_reading_link( $more_string ) {
 			the_title( '<span class="sr-only">"', '"</span>', false )
 		);
 
-		$more_string = '<a href="' . esc_url( get_permalink() ) . '">' . $continue_reading . '</a>';
+		$more_string = '&hellip; <a href="' . esc_url( get_permalink() ) . '">' . $continue_reading . '</a>';
 	}
 
 	return $more_string;
