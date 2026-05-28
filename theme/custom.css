@@ -1908,3 +1908,26 @@ body.search .emoji {
     line-height: 1.7;
   }
 }
+
+
+.ka-products-rec__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.ka-product-card {
+  height: 100%;
+  min-width: 0;
+}
+
+.ka-products-rec {
+  overflow: visible;
+}
+
+@media (max-width: 640px) {
+  .ka-products-rec__grid {
+    grid-template-columns: 1fr;
+  }
+}
