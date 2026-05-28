@@ -38,6 +38,104 @@ time.published + time.updated {
     display: none;
 }
 
+/* ========================================
+   SHARED PAGE TYPOGRAPHY
+======================================== */
+
+body.page:not(.home) {
+  background: linear-gradient(180deg, #f8f4ed 0%, #fcfbf8 240px, #fff 240px);
+  color: var(--text);
+}
+
+body.page:not(.home) #main {
+  width: min(100% - 32px, 1180px);
+  margin: 0 auto;
+  padding: 36px 0 72px;
+}
+
+body.page:not(.home) article.page > .entry-header {
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto 42px;
+  padding: 24px 0 8px;
+}
+
+body.page:not(.home) article.page > .entry-header .entry-title,
+body.page:not(.home) .page-title,
+.vet-layout-page-title {
+  margin: 0;
+  font-size: clamp(2rem, 4.2vw, 3.6rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+  font-weight: 800;
+  color: var(--brand);
+  text-align: center;
+  text-wrap: balance;
+}
+
+body.page:not(.home) .entry-content {
+  color: #3b3733;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+body.page:not(.home) .entry-content h2,
+body.page:not(.home) .entry-content h2.wp-block-heading,
+body.page:not(.home) .entry-content .vet-layout-title,
+body.page:not(.home) .entry-content .vet-layout-cta-title {
+  margin-top: 2em;
+  margin-bottom: 0.65em;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+  font-weight: 800;
+  color: var(--brand-dark);
+  text-wrap: balance;
+}
+
+.vet-layout-page-title {
+  margin-bottom: 2rem;
+}
+
+body.page:not(.home) .entry-content .vet-layout-title,
+body.page:not(.home) .entry-content .vet-layout-cta-title {
+  margin-top: 0;
+}
+
+body.page:not(.home) .entry-content h3,
+body.page:not(.home) .entry-content h3.wp-block-heading,
+body.page:not(.home) .entry-content h4,
+body.page:not(.home) .entry-content h4.wp-block-heading {
+  margin-top: 1.7em;
+  margin-bottom: 0.6em;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 750;
+  color: #24211f;
+  text-wrap: balance;
+}
+
+body.page:not(.home) .entry-content p,
+body.page:not(.home) .entry-content li,
+.vet-layout-body,
+.vet-layout-intro,
+.vet-layout-cta-copy {
+  color: #3b3733;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+body.page:not(.home) .entry-content a {
+  color: var(--brand-dark);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.14em;
+}
+
+body.page:not(.home) .entry-content a:hover {
+  color: var(--brand);
+}
+
 body.blog {
   background: linear-gradient(180deg, #f8f4ed 0%, #fcfbf8 240px, #fff 240px);
 }
@@ -60,7 +158,7 @@ body.blog .blog-home-header .page-title {
   margin: 0;
   font-size: clamp(2rem, 4.2vw, 3.6rem);
   line-height: 0.98;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   font-weight: 800;
   color: var(--brand);
   text-wrap: balance;
@@ -195,15 +293,21 @@ body.single-post .entry-header {
   padding: 28px 0 0;
 }
 
+/* HAL: Alicia, don't show in header. */
+.entry-header [rel="tag"] {
+    display: none;
+}
+
 body.single-post .entry-title {
-  margin: 0 auto;
-  max-width: 13ch;
-  font-size: clamp(2.4rem, 5vw, 4.8rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  font-weight: 800;
-  color: var(--brand);
-  text-wrap: balance;
+    margin: 0 auto;
+    max-width: 32ch;
+    font-size: clamp(2.2rem, 4vw, 4.8rem);
+    line-height: 1.1;
+    letter-spacing: 0;
+    font-weight: 800;
+    color: var(--brand);
+    text-wrap: balance;
+    /* text-transform: uppercase; */
 }
 
 body.single-post .entry-title + .entry-meta {
@@ -337,7 +441,7 @@ body.single-post .entry-content h3,
 body.single-post .entry-content h4 {
   color: #211e1b;
   line-height: 1.15;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   margin-top: 2.2em;
   margin-bottom: 0.7em;
 }
@@ -735,7 +839,7 @@ a.ka-button {
   margin: 0;
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   color: #8b672f;
 }
 
@@ -760,13 +864,14 @@ a.ka-button {
   background: #f6f1e9;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  padding: 0;
 }
 
 .ka-product-card__image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 18px;
+  padding: 0px;
   transition: transform 0.25s ease;
 }
 
@@ -835,35 +940,36 @@ a.ka-button {
 /* Recommended products block */
 .ka-products-rec {
   width: min(100%, 980px);
-  margin: 48px auto;
-  padding: 28px;
-  border-radius: 28px;
+  margin: 34px auto;
+  padding: 22px;
+  border-radius: 26px;
   background: #fffdfa;
   border: 1px solid #e8e1d7;
   box-shadow: 0 18px 50px rgba(24, 20, 14, 0.08);
 }
 
 .ka-products-rec h2 {
-  margin: 0 0 24px;
+  margin: 0 0 18px;
   text-align: center;
-  font-size: clamp(1.7rem, 3vw, 2.4rem);
-  line-height: 1;
-  letter-spacing: -0.04em;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  line-height: 1.08;
+  letter-spacing: 0;
   color: #8b672f;
 }
 
 .ka-products-rec__grid {
   display: grid;
   grid-template-columns: repeat(var(--ka-product-columns, 3), minmax(0, 1fr));
-  gap: 22px;
+  gap: 14px;
 }
 
 /* Product card */
 .ka-product-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 22px;
   background: #fff;
   border: 1px solid #eadfce;
   box-shadow: 0 10px 26px rgba(24, 20, 14, 0.06);
@@ -881,8 +987,7 @@ a.ka-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 250px;
-  padding: 24px;
+  min-height: 220px;
   background: linear-gradient(180deg, #f8f4ed 0%, #fffdfa 100%);
   border-bottom: 1px solid #eee5da;
   text-decoration: none;
@@ -890,8 +995,8 @@ a.ka-button {
 
 .ka-product-card__image img {
   width: 100%;
-  max-width: 230px;
-  height: 220px;
+  max-width: 205px;
+  height: 190px;
   object-fit: contain;
   display: block;
   mix-blend-mode: multiply;
@@ -904,18 +1009,28 @@ a.ka-button {
 
 /* Content */
 .ka-product-card__content {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding: 22px;
+  display: grid;
+  grid-template-rows: minmax(6em, auto) minmax(2em, auto) auto;
+  align-content: end;
+  gap: 8px;
+  padding: 0 15px 20px;
   flex: 1;
+}
+
+body.single-post .ka-product-card__content h3 {
+ margin-top: 20px;
+ font-size: 1em;
+}
+
+.ka-product-card__image {
+  padding: 0;
 }
 
 .ka-product-card__title {
   margin: 0;
-  font-size: clamp(1.08rem, 1.8vw, 1.35rem);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-size: clamp(1rem, 1.45vw, 1.12rem);
+  line-height: 1.16;
+  letter-spacing: 0;
   font-weight: 800;
 }
 
@@ -930,9 +1045,9 @@ a.ka-button {
 
 /* Price */
 .ka-product-card__price {
-  margin-top: auto;
+  margin: 0;
   color: #8b672f;
-  font-size: 1rem;
+  font-size: 0.94rem;
   line-height: 1.35;
   font-weight: 800;
 }
@@ -954,9 +1069,10 @@ a.ka-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 46px;
-  padding: 0.82rem 1rem;
+  width: fit-content;
+  min-width: 172px;
+  min-height: 42px;
+  padding: 0.72rem 1.25rem;
   border-radius: 999px;
   background: #b98a3d;
   color: #fff !important;
@@ -990,8 +1106,9 @@ a.ka-button {
 /* Mobile */
 @media (max-width: 860px) {
   .ka-products-rec {
-    padding: 20px;
-    border-radius: 24px;
+    margin: 28px auto;
+    padding: 16px;
+    border-radius: 22px;
   }
 
   .ka-products-rec__grid {
@@ -999,11 +1116,22 @@ a.ka-button {
   }
 
   .ka-product-card__image {
-    min-height: 220px;
+    min-height: 200px;
   }
 
   .ka-product-card__image img {
-    height: 190px;
+    height: 175px;
+  }
+
+  .ka-product-card__content {
+    grid-template-rows: auto;
+    padding: 16px 18px 18px;
+  }
+
+  .ka-product-card__button,
+  .ka-product-card .ka-button {
+    width: 100%;
+    min-width: 0;
   }
 }
 
@@ -1073,7 +1201,7 @@ body.search .page-title {
   margin: 0;
   font-size: clamp(2rem, 4.2vw, 3.6rem);
   line-height: 0.98;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   font-weight: 800;
   color: var(--archive-brand);
   text-wrap: balance;
@@ -1212,7 +1340,7 @@ body.search article.post .entry-title {
   margin: 0;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   line-height: 1.06;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   font-weight: 800;
   text-wrap: balance;
 }
@@ -1685,7 +1813,7 @@ body.search .emoji {
   margin: 0 0 8px;
   font-size: clamp(1.45rem, 2.5vw, 2rem);
   line-height: 1.05;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   font-weight: 800;
   color: #241f1a;
 }
@@ -1780,4 +1908,3 @@ body.search .emoji {
     line-height: 1.7;
   }
 }
-
