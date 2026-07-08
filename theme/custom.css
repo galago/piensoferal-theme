@@ -1931,3 +1931,7 @@ body.search .emoji {
     grid-template-columns: 1fr;
   }
 }
+
+body.single-post .entry-content a.ka-button.ka-button--legacy {
+  color: white;
+}
